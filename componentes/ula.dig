@@ -201,6 +201,10 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Label</string>
           <string>c_ula</string>
         </entry>
@@ -209,7 +213,7 @@
           <int>4</int>
         </entry>
       </elementAttributes>
-      <pos x="1020" y="800"/>
+      <pos x="1040" y="780"/>
     </visualElement>
     <visualElement>
       <elementName>Comparator</elementName>
@@ -738,10 +742,6 @@
       <p2 x="660" y="1120"/>
     </wire>
     <wire>
-      <p1 x="1020" y="800"/>
-      <p2 x="1040" y="800"/>
-    </wire>
-    <wire>
       <p1 x="720" y="420"/>
       <p2 x="740" y="420"/>
     </wire>
@@ -887,7 +887,7 @@
     </wire>
     <wire>
       <p1 x="1040" y="700"/>
-      <p2 x="1040" y="800"/>
+      <p2 x="1040" y="780"/>
     </wire>
     <wire>
       <p1 x="980" y="300"/>

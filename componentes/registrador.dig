@@ -116,7 +116,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>C rd</string>
+          <string>rd</string>
         </entry>
         <entry>
           <string>Bits</string>
@@ -141,7 +141,12 @@
     </visualElement>
     <visualElement>
       <elementName>Clock</elementName>
-      <elementAttributes/>
+      <elementAttributes>
+        <entry>
+          <string>Label</string>
+          <string>ck</string>
+        </entry>
+      </elementAttributes>
       <pos x="-1620" y="1020"/>
     </visualElement>
     <visualElement>
