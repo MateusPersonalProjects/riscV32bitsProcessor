@@ -21,12 +21,12 @@
       <elementName>Multiplexer</elementName>
       <elementAttributes>
         <entry>
-          <string>Bits</string>
-          <int>32</int>
-        </entry>
-        <entry>
           <string>Selector Bits</string>
           <int>2</int>
+        </entry>
+        <entry>
+          <string>Bits</string>
+          <int>32</int>
         </entry>
       </elementAttributes>
       <pos x="780" y="380"/>
@@ -35,16 +35,16 @@
       <elementName>In</elementName>
       <elementAttributes>
         <entry>
+          <string>rotation</string>
+          <rotation rotation="1"/>
+        </entry>
+        <entry>
           <string>Label</string>
-          <string>ImmSelec</string>
+          <string>ImmC</string>
         </entry>
         <entry>
           <string>Bits</string>
           <int>2</int>
-        </entry>
-        <entry>
-          <string>rotation</string>
-          <rotation rotation="1"/>
         </entry>
       </elementAttributes>
       <pos x="800" y="560"/>
@@ -54,7 +54,7 @@
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>A</string>
+          <string>in</string>
         </entry>
         <entry>
           <string>Bits</string>
