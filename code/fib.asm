@@ -3,8 +3,9 @@
 
 # ------------ vetor ---------------
 # inicializa o vetor
-lui s0, 0x10010 # add o endereço onde sera armazenado o vetor
-ori s0, s0, 0x400 
+#lui s0, 0x10010 # add o endereço onde sera armazenado o vetor
+#ori s0, s0, 0x400 
+addi s0, zero, 1 # deus me ajuda
 addi s2, zero, 20 # define o tamanho do vetor
 
 # prepara a chamada da função fib
