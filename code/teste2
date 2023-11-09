@@ -1,0 +1,24 @@
+Address     Code        Basic                        Line Source
+
+0x00400000  0x010000ef  jal x1,16                    2    jal main
+0x00400004  0x001a0e13  addi x28,x20,1               5      addi t3, s4, 1
+0x00400008  0x01c4a0a3  sw x28,1(x9)                 6      sw t3, 1(s1)
+0x0040000c  0x030000ef  jal x1,48                    8      jal two
+0x00400010  0x00000493  addi x9,x0,0                 11     addi s1, zero, 0 # endereço do começo da ram
+0x00400014  0x00200913  addi x18,x0,2                13     addi s2, zero, 2 # enche s2 com 2
+0x00400018  0x00400993  addi x19,x0,4                14     addi s3, zero, 4 # enche s3 com 4 
+0x0040001c  0x01298a33  add x20,x19,x18              15     add s4, s3, s2 # faz a soma de s2 com s3 e guarda em s4
+0x00400020  0x0144a023  sw x20,0(x9)                 16     sw s4, 0(s1) # guarda s4 dentro da memoria
+0x00400024  0x00a00393  addi x7,x0,10                18     addi t2, zero, 10 # valor para qual iremos comparar
+0x00400028  0x00000e13  addi x28,x0,0                19     addi t3, zero, 0 #contador
+0x0040002c  0xfd9ff0ef  jal x1,-40                   20     jal one
+0x00400030  0x001e0e13  addi x28,x28,1               23     addi t3, t3, 1
+0x00400034  0x01c4a1a3  sw x28,3(x9)                 24     sw t3, 3(s1)
+0x00400038  0x010000ef  jal x1,16                    26     jal fim
+0x0040003c  0x001e0e13  addi x28,x28,1               29     addi t3, t3, 1
+0x00400040  0x01c4a123  sw x28,2(x9)                 30     sw t3, 2(s1)
+0x00400044  0xfedff0ef  jal x1,-20                   32     jal three
+0x00400048  0x00ae0e13  addi x28,x28,10              35     addi, t3, t3, 10
+0x0040004c  0x01c4a023  sw x28,0(x9)                 36     sw t3, 0(s1) # guarda s4 dentro da memoria 
+0x00400050  0x00a00893  addi x17,x0,10               37     li a7, 10
+0x00400054  0x00000073  ecall                        38     ecall
