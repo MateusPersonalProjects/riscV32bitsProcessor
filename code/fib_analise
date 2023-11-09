@@ -1,0 +1,23 @@
+Address     Code        Basic                        Line Source
+
+0x00400000  0x00000413  addi x8,x0,0                 8    addi s0, zero, 0 # deus me ajuda
+0x00400004  0x01400913  addi x18,x0,20               9    addi s2, zero, 20 # define o tamanho do vetor
+0x00400008  0x00100593  addi x11,x0,1                12   addi a1, zero, 1 # primeiro elemento como parametro
+0x0040000c  0x00100613  addi x12,x0,1                13   addi a2, zero, 1 # segundo elemento como parametro
+0x00400010  0x012006b3  add x13,x0,x18               14   add a3, zero, s2 # tamanho do vetor como parametro
+0x00400014  0x00c000ef  jal x1,12                    16   jal ra, fib # chama fib
+0x00400018  0x00a00893  addi x17,x0,10               18   li a7, 10 # encerra o programa
+0x0040001c  0x00000073  ecall                        19   ecall
+0x00400020  0x00200493  addi x9,x0,2                 23     addi s1, zero, 2
+0x00400024  0x00b42023  sw x11,0(x8)                 24     sw a1, 0(s0) # colocamos a1 dentro da primeira posição do vetor
+0x00400028  0x00c42223  sw x12,4(x8)                 25     sw a2, 4(s0) # colocamos a2 dentro da segunda posição do vetor
+0x0040002c  0x02d4d263  bge x9,x13,36                29     bge s1, a3, fim # condicional
+0x00400030  0x00249293  slli x5,x9,2                 30     slli t0, s1, 2 # multiplico por 4 o iterador para pegar o endereço correto
+0x00400034  0x008282b3  add x5,x5,x8                 31     add t0, t0, s0  # adiciono o endereço ao iterador
+0x00400038  0xffc2a303  lw x6,-4(x5)                 33     lw t1, -4(t0) # carrego o penultimo valor
+0x0040003c  0xff82a383  lw x7,-8(x5)                 34     lw t2, -8(t0) # carrego o antepenultimo valor
+0x00400040  0x00730e33  add x28,x6,x7                35     add t3, t1, t2 # soma os valores
+0x00400044  0x01c2a023  sw x28,0(x5)                 36     sw t3, 0(t0) # armazena o valor em sua devida posição
+0x00400048  0x00148493  addi x9,x9,1                 38     addi s1, s1, 1 # add 1 no nosso iterador
+0x0040004c  0xfe1ff0ef  jal x1,-32                   39     jal loop
+0x00400050  0x00008067  jalr x0,x1,0                 42     jr ra
