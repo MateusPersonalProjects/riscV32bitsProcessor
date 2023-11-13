@@ -3,9 +3,8 @@
 
 # ------------ vetor ---------------
 # inicializa o vetor
-#lui s0, 0x10010 # add o endereço onde sera armazenado o vetor
-#ori s0, s0, 0x400 
-addi s0, zero, 1 # deus me ajuda
+lui s0, 0x10010 # add o endereço onde sera armazenado o vetor
+ori s0, s0, 0x400 
 addi s2, zero, 20 # define o tamanho do vetor
 
 # prepara a chamada da função fib
@@ -36,7 +35,7 @@ fib:
     sw t3, 0(t0) # armazena o valor em sua devida posição
     
     addi s1, s1, 1 # add 1 no nosso iterador
-    jal loop
+    j loop
   fim:
   jr ra
   

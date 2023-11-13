@@ -39,5 +39,5 @@ loop:
   jal loop
   
 fim:
-  jr ra
+  jalr ra
   

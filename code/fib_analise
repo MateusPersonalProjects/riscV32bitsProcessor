@@ -20,4 +20,4 @@ Address     Code        Basic                        Line Source
 0x00400044  0x01c2a023  sw x28,0(x5)                 36     sw t3, 0(t0) # armazena o valor em sua devida posição
 0x00400048  0x00148493  addi x9,x9,1                 38     addi s1, s1, 1 # add 1 no nosso iterador
 0x0040004c  0xfe1ff0ef  jal x1,-32                   39     jal loop
-0x00400050  0x00008067  jalr x0,x1,0                 42     jr ra
+0x00400050  0x000080e7  jalr x0,x1,0                 42     jr ra
